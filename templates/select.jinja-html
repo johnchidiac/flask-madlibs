@@ -1,0 +1,13 @@
+{% extends 'base.jinja-html' %}
+{% block title %}Select Madlib Story{% endblock %}
+{% block content %}
+	<h1>Select Madlib Story</h1>
+	<form action="form" method="POST">
+		<select name="title">
+		{% for title in titles %}
+			<option value="{{loop.index}}">{{title}}</option>
+		{% endfor %}
+		</select>
+		<button>Submit</button>
+	</form>
+{% endblock %}

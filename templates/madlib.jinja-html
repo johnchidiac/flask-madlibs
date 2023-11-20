@@ -1,0 +1,6 @@
+{% extends 'base.jinja-html' %}
+{% block title %}Your Madlib{% endblock %}
+{% block content %}
+	<h1>Your Madlib Story</h1>
+	<p>{{story}}</p>
+{% endblock %}
